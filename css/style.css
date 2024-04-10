@@ -1,11 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: var(--fonte-da-pag);
 }
 
 :root {
-  --fonte-da-pag: "Georgia";
   --cor-padrao: #DBA94B;
   --cor-preta: black;
   --cor-branca: white;
@@ -29,16 +28,21 @@ header #transparencia {
 nav {
   position: absolute;
   width: 100%;
-  height: 80px;
+  height: 110px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 nav .nome-restaurante {
-  color: var(--cor-branca);
-  font-size: 50px;
+  display: flex;
+  align-items: center;
 }
-nav .nome-restaurante:hover {
+nav .nome-restaurante p {
+  color: var(--cor-branca);
+  font-size: 60px;
+  font-family: "Great Vibes";
+}
+nav .nome-restaurante p:hover {
   color: var(--cor-padrao);
   cursor: pointer;
   transition: 0.5s;
@@ -71,11 +75,38 @@ nav .links button:hover {
   transition: 0.5s;
 }
 
-.titulo-e-button {
+main {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  flex-direction: column;
+}
+main h1 {
+  color: var(--cor-branca);
+  text-align: center;
+  font-size: 85px;
+  font-weight: 700;
+}
+main p {
+  color: var(--cor-padrao);
+  text-align: center;
+  font-size: 50px;
+  font-family: "Great Vibes";
+}
+main button {
+  background-color: transparent;
+  color: var(--cor-branca);
+  margin-top: 2em;
+  width: 180px;
+  font-size: 20px;
+  border: 1px solid var(--cor-padrao);
+  border-radius: 10px;
+  padding: 15px;
+}
+main button:hover {
+  background-color: var(--cor-padrao);
+  transform: scaleX(1.02);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
